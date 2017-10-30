@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibe.Umbraco.MediaSearch", "Gibe.Umbraco.MediaSearch\Gibe.Umbraco.MediaSearch.csproj", "{83114071-07FB-4790-A368-DEFED3DEED21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibe.Umbraco.MediaSearch.Umbraco", "Gibe.Umbraco.MediaSearch.Umbraco\Gibe.Umbraco.MediaSearch.Umbraco.csproj", "{3C85346F-C72D-4F05-8E35-11AA0685BE4A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{83114071-07FB-4790-A368-DEFED3DEED21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83114071-07FB-4790-A368-DEFED3DEED21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83114071-07FB-4790-A368-DEFED3DEED21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83114071-07FB-4790-A368-DEFED3DEED21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C85346F-C72D-4F05-8E35-11AA0685BE4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C85346F-C72D-4F05-8E35-11AA0685BE4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C85346F-C72D-4F05-8E35-11AA0685BE4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C85346F-C72D-4F05-8E35-11AA0685BE4A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5D3FE61F-5AA3-4342-B5E9-891C4EA0CA01}
+	EndGlobalSection
+EndGlobal

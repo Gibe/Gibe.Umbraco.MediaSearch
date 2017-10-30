@@ -1,0 +1,32 @@
+﻿<div ng-controller="Gibe.Umbraco.MediaSearch.MediaPickerDialogController">
+	<div class="gibe-ai">
+		<div class="gibe-ai-tree">
+			<div class="gibe-ai-section gibe-ai-tree__search">
+				<div class="form-search">
+					<i class="icon-search"></i>
+					<input class="search-input" type="text" ng-model="term" ng-change="search(term)" placeholder="Type to search..." />
+				</div>
+			</div>
+			<div class="gibe-ai-section gibe-ai-section--no-border gibe-ai-tree__facets">
+				<h2 class="gibe-ai-search-summary">Search results<span ng-show="term.length > 2"> for '{{term}}'</span></h2>
+				<div class="umb-tags" ng-show="checkIfAnySelected()">
+					<span ng-repeat="facet in facets">
+						<span ng-repeat="value in facet.Values" class="label label-primary tag" ng-show="value.Selected" ng-click="value.Selected = false; search(term)">
+							<span>{{value.Value || "None"}}</span>
+							<i class="icon icon-delete"></i>
+						</span>
+					</span>
+				</div>
+				<p class="alert alert-info" ng-show="media.length < 1">Sorry, no results could be found<span ng-show="term.length > 2"> for <b>'{{term}}'</b></span>. Please try again.</p>
+				<umb-media-grid items="media" on-click="vm.clickItem" on-click-name="vm.clickItemName"></umb-media-grid>
+				<div class="gibe-ai-loader" ng-show="loading">
+					<ul class="umb-load-indicator animated">
+						<li class="umb-load-indicator__bubble"></li>
+						<li class="umb-load-indicator__bubble"></li>
+						<li class="umb-load-indicator__bubble"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

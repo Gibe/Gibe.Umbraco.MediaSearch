@@ -1,0 +1,189 @@
+﻿.gibe-ai
+{
+	background: #fff;
+	bottom: 0;
+	left: 0;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 1;
+}
+
+.gibe-ai .gibe-ai-tree
+{
+	border-right: 1px solid #b3afbd;
+	bottom: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	width: 360px;
+	z-index: 1;
+}
+
+.gibe-ai .gibe-ai-content
+{
+	bottom: 0;
+	left: 361px;
+	margin: 0;
+	overflow-y: auto;
+	padding: 30px 20px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 1;
+}
+
+.gibe-ai .gibe-ai-content umb-tags
+{
+	margin-bottom: 20px;
+}
+
+.gibe-ai .gibe-ai-section
+{
+	border-bottom: 1px solid #b3afbd;
+	margin: 0;
+	padding: 30px 20px;
+}
+
+.gibe-ai .gibe-ai-section--no-border
+{
+	border-bottom: 0;
+}
+
+.gibe-ai .gibe-ai-tree__search
+{
+	background: #fff;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 2;
+}
+
+.gibe-ai .gibe-ai-tree__search .form-search .search-input
+{
+	width: 100%;
+}
+
+.gibe-ai .gibe-ai-tree__facets
+{
+	bottom: 0;
+	left: 0;
+	overflow-y: auto;
+	padding-top: 10px;
+	position: absolute;
+	right: 0;
+	top: 94px;
+	z-index: 1;
+}
+
+.gibe-ai .gibe-ai-facet
+{
+	border-bottom: 1px solid rgba(216,215,217, .8);
+	margin: 0 -20px;
+	padding: 10px 20px 20px 20px;
+}
+
+.gibe-ai .gibe-ai-facet__title
+{
+	color: #303033;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 20px;
+	margin: 0;
+	padding: 10px 0 20px 0;
+	text-transform: capitalize;
+}
+
+.gibe-ai .gibe-ai-facet__menu
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.gibe-ai .gibe-ai-facet__menu__item
+{
+	list-style: none;
+	margin: 0;
+	padding: 0 0 5px 0;
+}
+
+.gibe-ai .gibe-ai-facet__menu__item label
+{
+	cursor: default;
+	display: block;
+	margin: 0;
+	padding: 0 0 0 20px;
+	position: relative;
+	z-index: 1;
+}
+
+.gibe-ai .gibe-ai-facet__menu__item input
+{
+	cursor: pointer;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 3px;
+	z-index: 1;
+}
+
+.gibe-ai .gibe-ai-facet__menu__item input:disabled
+{
+	cursor: default;
+}
+
+.gibe-ai .gibe-ai-facet__menu__item span
+{
+	cursor: pointer;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+.gibe-ai .gibe-ai-facet__menu__item small
+{
+	display: inline;
+}
+
+.gibe-ai .gibe-ai-facet__menu__item input:disabled + span
+{
+	color: #999;
+	cursor: default;
+	text-decoration: line-through;
+}
+
+.gibe-ai .gibe-ai-search-summary
+{
+	color: #303033;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 20px;
+	margin: 0;
+	padding: 0 0 20px 0;
+}
+
+.gibe-ai .gibe-ai-loader
+{
+	background: #fff;
+	bottom: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 10;
+}
+
+.gibe-ai .umb-tags
+{
+	margin-bottom: 20px;
+}
