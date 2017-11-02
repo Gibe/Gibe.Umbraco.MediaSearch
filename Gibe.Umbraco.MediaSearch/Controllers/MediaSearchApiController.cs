@@ -6,7 +6,7 @@ using Microsoft.Azure.Search;
 using Microsoft.Azure.Search.Models;
 using Umbraco.Web.WebApi;
 
-namespace UmbracoIntelligentMedia.Controllers
+namespace Gibe.Umbraco.MediaSearch.Controllers
 {
 	public class MediaSearchApiController : UmbracoApiController
 	{
@@ -14,7 +14,7 @@ namespace UmbracoIntelligentMedia.Controllers
 
 		public MediaSearchApiController()
 		{
-			_client = new SearchIndexClient("umbracomedia", "umbraco", new SearchCredentials("FCEB27B0FA292CA9149892B5494669F5"));
+			_client = new SearchIndexClient("umbracomedia", "umbraco", new SearchCredentials("519187B1D3CCB20F7EBE5323F400986A"));
 		}
 
 		[HttpGet, HttpPost]
@@ -22,7 +22,7 @@ namespace UmbracoIntelligentMedia.Controllers
 		{
 			var parameters = new SearchParameters
 			{
-				Facets = new[] { "tags,count:25", "categories,count:25", "primaryColour","backgroundColour","numberOfFaces"}
+				Facets = new[] { "tags,count:25", "categories,count:25", "primaryColour","backgroundColour","numberOfFaces"},
 			};
 
 			if (facets != null)
@@ -32,11 +32,11 @@ namespace UmbracoIntelligentMedia.Controllers
 				{
 					if (facet.Values.Any(f => f.Selected))
 					{
-						if (facet.Key == "tags" || facet.Key == "categories") // TODO : Base on azure search type
+						if (facet.Key == "tags" || facet.Key == "categories") // TODO : HARDCODED should be based on azure search type
 						{
 							queries.AddRange(facet.Values.Where(f => f.Selected).Select(t => $"{facet.Key}/any(t: t eq '{t.Value}')"));
 						}
-						else if (facet.Key == "numberOfFaces")
+						else if (facet.Key == "numberOfFaces") // TODO : And here
 						{
 							queries.AddRange(facet.Values.Where(f => f.Selected).Select(t => $"{facet.Key} eq {t.Value}"));
 						}

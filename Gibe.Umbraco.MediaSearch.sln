@@ -7,6 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibe.Umbraco.MediaSearch", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibe.Umbraco.MediaSearch.Umbraco", "Gibe.Umbraco.MediaSearch.Umbraco\Gibe.Umbraco.MediaSearch.Umbraco.csproj", "{3C85346F-C72D-4F05-8E35-11AA0685BE4A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D7FAB357-4DC5-4469-8071-14812F887403}"
+	ProjectSection(SolutionItems) = preProject
+		readme.md = readme.md
+		VERSION.txt = VERSION.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

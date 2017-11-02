@@ -13,6 +13,8 @@
     <tags>Media Search</tags>
 	  <dependencies>
 		  <dependency id="UmbracoCms" version="7.6.8" />
+		  <dependency id="Moriyama.AzureSearch.Umbraco" version="1.0.1" />
+		  <dependency id="Microsoft.Azure.Search" version="3.0.4" />
 	  </dependencies>
   </metadata>
   <files>

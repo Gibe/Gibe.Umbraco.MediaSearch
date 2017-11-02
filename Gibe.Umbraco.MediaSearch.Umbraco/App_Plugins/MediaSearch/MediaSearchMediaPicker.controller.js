@@ -89,7 +89,7 @@
 		dialogService.open(
 			{
 				show: true,
-				template: '/app_plugins/intelligentmedia/pickerdialog.html'
+				template: '/app_plugins/mediasearch/pickerdialog.html'
 			});
 	};
 
