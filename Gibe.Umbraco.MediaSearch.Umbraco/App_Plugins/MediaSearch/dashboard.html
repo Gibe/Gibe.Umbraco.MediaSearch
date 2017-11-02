@@ -32,7 +32,7 @@
 				</span>
 			</div>
 			<p class="alert alert-info" ng-show="media.length < 1">Sorry, no results could be found<span ng-show="term.length > 2"> for <b>'{{term}}'</b></span>. Please try again.</p>
-			<umb-media-grid items="media" on-click="vm.clickItem" on-click-name="vm.clickItemName"></umb-media-grid>
+			<umb-media-grid items="media" on-click="clickItem" on-click-name="clickItemName"></umb-media-grid>
 			<div class="gibe-ai-loader" ng-show="loading">
 				<ul class="umb-load-indicator animated">
 					<li class="umb-load-indicator__bubble"></li>

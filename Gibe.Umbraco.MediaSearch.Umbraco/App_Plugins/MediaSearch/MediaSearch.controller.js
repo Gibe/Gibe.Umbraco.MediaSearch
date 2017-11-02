@@ -1,4 +1,4 @@
-﻿function mediaSearchController($scope, $log, $http, umbRequestHelper, mediaResource) {
+﻿function mediaSearchController($scope, $log, $http, $location, umbRequestHelper, mediaResource) {
 
 	$scope.loading = false;
 
@@ -26,12 +26,22 @@
 	$scope.search($scope.term);
 
 	$scope.checkIfAnySelected = function () {
+		if (!$scope.facets) return false;
 		for (var i = 0; i < $scope.facets.length; i++) {
 			for (var j = 0; j < $scope.facets[i].Values.length; j++) {
 				if ($scope.facets[i].Values[j].Selected) return true;				
 			}
 		}
 		return false;
+	};
+
+	$scope.click = function (item, $event, $index) {
+		item.selected = true;
+	};
+
+	$scope.clickItemName = function (item, $event, $index) {
+		console.log(item);
+		$location.path("/media/media/edit/" + item.id);
 	};
 
 	function updateFacets(facets) {
@@ -58,6 +68,8 @@
 		}
 		return 0;
 	}
+
+	
 }
 
 angular.module("umbraco").controller("Gibe.Umbraco.Dashboard.MediaSearchController", mediaSearchController);
